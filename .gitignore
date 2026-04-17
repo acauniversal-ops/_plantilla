@@ -1,0 +1,12 @@
+# ============================================
+# IGNORAR TODO EXCEPTO ARCHIVOS ESPECIFICADOS
+# ============================================
+
+# Ignorar todo por defecto
+*
+
+# Excepciones: NO ignorar estos archivos/directorios
+!.gitignore
+!README.md
+!wwwroot/
+!wwwroot/**

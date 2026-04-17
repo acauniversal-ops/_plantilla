@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-aplicacion-principal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.encabezado-aplicacion-principal {
+    background-color: #6b1f3a;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor-logo-aplicacion {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.imagen-logo-empresa {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.texto-logo-empresa {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Menu */
+.menu-navegacion-principal {
+    display: flex;
+    justify-content: center;
+}
+
+.lista-opciones-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.lista-opciones-menu li {
+    position: relative;
+}
+
+.lista-opciones-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.lista-opciones-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Submenu Services */
+.menu-desplegable-servicios {
+    position: relative;
+}
+
+.submenu-servicios-digitales {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #5a1a31;
+    min-width: 220px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    padding: 10px 0;
+    z-index: 1000;
+    list-style: none;
+}
+
+.menu-desplegable-servicios:hover .submenu-servicios-digitales {
+    display: block;
+}
+
+.submenu-servicios-digitales li {
+    width: 100%;
+}
+
+.submenu-servicios-digitales a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 0;
+}
+
+.submenu-servicios-digitales a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Main Content */
+.contenido-principal-aplicacion {
+    flex: 1;
+}
+
+.seccion-contenido-principal {
+    min-height: 600px;
+    padding: 40px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.seccion-contenido-principal:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.seccion-contenido-principal:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.titulo-seccion-contenido {
+    font-size: 28px;
+    color: #333;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/* Footer */
+.pie-pagina-aplicacion {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    padding: 60px 40px;
+    margin-top: auto;
+}
+
+.contenedor-contenido-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.texto-derechos-reservados {
+    font-size: 14px;
+    color: #cccccc;
+}
+
+/* Service Pages Styles */
+.contenedor-descripcion-servicio {
+    padding: 20px 40px;
+    max-width: 1000px;
+}
+
+.descripcion-servicio-principal {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    font-weight: 500;
+}
+
+.descripcion-perfil-profesional {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #666;
+}
