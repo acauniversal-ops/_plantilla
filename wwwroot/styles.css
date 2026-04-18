@@ -183,3 +183,413 @@ body {
     line-height: 1.7;
     color: #666;
 }
+
+/* RESPONSIVE */
+
+/* ============================================
+   ESTRATEGIA MOBILE-FIRST
+   ============================================ */
+
+/* Dispositivos móviles pequeños (hasta 480px) - Mobile First */
+@media (max-width: 480px) {
+    .encabezado-aplicacion-principal {
+        padding: 12px 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .contenedor-logo-aplicacion {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .texto-logo-empresa {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    
+    .menu-navegacion-principal {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .lista-opciones-menu {
+        gap: 15px;
+        padding: 5px 0;
+        justify-content: flex-start;
+        min-width: max-content;
+    }
+    
+    .lista-opciones-menu a {
+        font-size: 14px;
+        padding: 6px 10px;
+        white-space: nowrap;
+    }
+    
+    .seccion-contenido-principal {
+        padding: 25px 20px;
+        min-height: 400px;
+    }
+    
+    .titulo-seccion-contenido {
+        font-size: 22px;
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .pie-pagina-aplicacion {
+        padding: 40px 20px;
+    }
+    
+    .contenedor-descripcion-servicio {
+        padding: 15px 20px;
+    }
+    
+    .descripcion-servicio-principal {
+        font-size: 16px;
+    }
+    
+    .descripcion-perfil-profesional {
+        font-size: 14px;
+    }
+    
+    /* Ajustes para submenús en móvil */
+    .menu-desplegable-servicios:hover .submenu-servicios-digitales {
+        position: static;
+        margin-top: 10px;
+        box-shadow: none;
+        background-color: rgba(90, 26, 49, 0.95);
+    }
+    
+    .submenu-servicios-digitales {
+        min-width: 100%;
+    }
+}
+
+/* Dispositivos móviles medianos (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .encabezado-aplicacion-principal {
+        padding: 15px 30px;
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .contenedor-logo-aplicacion {
+        justify-content: center;
+    }
+    
+    .texto-logo-empresa {
+        font-size: 22px;
+    }
+    
+    .lista-opciones-menu {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .lista-opciones-menu a {
+        font-size: 15px;
+        padding: 7px 12px;
+    }
+    
+    .seccion-contenido-principal {
+        padding: 30px 25px;
+        min-height: 450px;
+    }
+    
+    .titulo-seccion-contenido {
+        font-size: 24px;
+        margin-left: 10px;
+    }
+    
+    .pie-pagina-aplicacion {
+        padding: 50px 30px;
+    }
+    
+    .contenedor-descripcion-servicio {
+        padding: 20px 30px;
+    }
+}
+
+/* Tablets (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .encabezado-aplicacion-principal {
+        padding: 15px 35px;
+        gap: 35px;
+    }
+    
+    .texto-logo-empresa {
+        font-size: 23px;
+    }
+    
+    .lista-opciones-menu {
+        gap: 25px;
+    }
+    
+    .lista-opciones-menu a {
+        font-size: 15px;
+    }
+    
+    .seccion-contenido-principal {
+        padding: 35px 30px;
+        min-height: 500px;
+    }
+    
+    .titulo-seccion-contenido {
+        font-size: 26px;
+    }
+    
+    .pie-pagina-aplicacion {
+        padding: 55px 35px;
+    }
+    
+    .contenedor-descripcion-servicio {
+        padding: 25px 35px;
+    }
+}
+
+/* Laptops y escritorio pequeño (1025px - 1366px) */
+@media (min-width: 1025px) and (max-width: 1366px) {
+    .encabezado-aplicacion-principal {
+        padding: 15px 40px;
+        gap: 40px;
+    }
+    
+    .seccion-contenido-principal {
+        padding: 40px 35px;
+    }
+    
+    .pie-pagina-aplicacion {
+        padding: 60px 40px;
+    }
+}
+
+/* Escritorio grande (1367px - 1920px) */
+@media (min-width: 1367px) and (max-width: 1920px) {
+    .encabezado-aplicacion-principal {
+        padding: 20px 50px;
+        gap: 50px;
+    }
+    
+    .texto-logo-empresa {
+        font-size: 26px;
+    }
+    
+    .lista-opciones-menu a {
+        font-size: 17px;
+        padding: 10px 15px;
+    }
+    
+    .seccion-contenido-principal {
+        padding: 50px 60px;
+        min-height: 700px;
+    }
+    
+    .titulo-seccion-contenido {
+        font-size: 32px;
+        margin-left: 30px;
+    }
+    
+    .pie-pagina-aplicacion {
+        padding: 70px 50px;
+    }
+    
+    .contenedor-contenido-footer {
+        max-width: 1400px;
+    }
+    
+    .contenedor-descripcion-servicio {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+/* Pantallas extra grandes y Smart TVs (1921px y más) */
+@media (min-width: 1921px) {
+    .encabezado-aplicacion-principal {
+        padding: 25px 80px;
+        gap: 60px;
+    }
+    
+    .imagen-logo-empresa {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .texto-logo-empresa {
+        font-size: 32px;
+        letter-spacing: 3px;
+    }
+    
+    .lista-opciones-menu {
+        gap: 40px;
+    }
+    
+    .lista-opciones-menu a {
+        font-size: 20px;
+        padding: 12px 20px;
+    }
+    
+    .seccion-contenido-principal {
+        padding: 80px 100px;
+        min-height: 800px;
+    }
+    
+    .titulo-seccion-contenido {
+        font-size: 40px;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    
+    .pie-pagina-aplicacion {
+        padding: 100px 80px;
+    }
+    
+    .contenedor-contenido-footer {
+        max-width: 1600px;
+    }
+    
+    .texto-derechos-reservados {
+        font-size: 18px;
+    }
+    
+    .contenedor-descripcion-servicio {
+        max-width: 1400px;
+        padding: 40px 80px;
+    }
+    
+    .descripcion-servicio-principal {
+        font-size: 22px;
+        line-height: 1.8;
+    }
+    
+    .descripcion-perfil-profesional {
+        font-size: 20px;
+        line-height: 1.9;
+    }
+}
+
+/* ============================================
+   AJUSTES ESPECIALES PARA ORIENTACIÓN
+   ============================================ */
+
+/* Tablets en orientación horizontal */
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+    .encabezado-aplicacion-principal {
+        flex-direction: row;
+    }
+    
+    .seccion-contenido-principal {
+        min-height: 400px;
+    }
+}
+
+/* Dispositivos móviles en orientación horizontal */
+@media (max-width: 768px) and (orientation: landscape) {
+    .encabezado-aplicacion-principal {
+        flex-direction: row;
+        padding: 10px 20px;
+    }
+    
+    .contenedor-logo-aplicacion {
+        width: auto;
+    }
+    
+    .menu-navegacion-principal {
+        width: auto;
+    }
+    
+    .seccion-contenido-principal {
+        min-height: 300px;
+        padding: 20px;
+    }
+}
+
+/* ============================================
+   MEJORAS DE ACCESIBILIDAD Y USABILIDAD
+   ============================================ */
+
+/* Mejora de contraste para dispositivos con preferencia de alto contraste */
+@media (prefers-contrast: high) {
+    .encabezado-aplicacion-principal {
+        background-color: #4a1529;
+    }
+    
+    .lista-opciones-menu a {
+        color: #ffffff;
+        border: 1px solid #ffffff;
+    }
+    
+    .submenu-servicios-digitales {
+        background-color: #3a1121;
+    }
+}
+
+/* Reducción de movimiento para usuarios que lo prefieren */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .lista-opciones-menu a {
+        transition: none;
+    }
+}
+
+/* Mejora de legibilidad en pantallas pequeñas */
+@media (max-width: 768px) {
+    body {
+        -webkit-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+    }
+    
+    .seccion-contenido-principal {
+        line-height: 1.5;
+    }
+}
+
+/* Ajustes para impresión */
+@media print {
+    .encabezado-aplicacion-principal,
+    .pie-pagina-aplicacion {
+        display: none;
+    }
+    
+    .seccion-contenido-principal {
+        padding: 20px;
+        min-height: auto;
+        border: none;
+        background-color: white !important;
+    }
+    
+    .titulo-seccion-contenido {
+        color: black;
+        font-size: 18pt;
+    }
+}
+
+/* ============================================
+   SOPORTE PARA DISPOSITIVOS DE BAJA RESOLUCIÓN
+   ============================================ */
+
+/* Dispositivos con densidad de píxeles baja */
+@media (max-resolution: 96dpi) {
+    .texto-logo-empresa,
+    .lista-opciones-menu a,
+    .titulo-seccion-contenido {
+        font-weight: 600;
+    }
+}
+
+/* Dispositivos con densidad de píxeles alta (Retina, 4K, etc.) */
+@media (min-resolution: 192dpi) {
+    .imagen-logo-empresa {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
